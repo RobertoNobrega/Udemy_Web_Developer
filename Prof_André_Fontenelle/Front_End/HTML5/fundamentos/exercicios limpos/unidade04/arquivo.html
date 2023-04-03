@@ -1,10 +1,32 @@
 <!DOCTYPE html>
+<!--                Aula 23: Aplicar CSS ao documento HTML.             -->
+<!-- Estilo (em CSS), serve para personalizar aparência de página HTML. -->
 <html lang="pt-BR" >
     <head>
         <title>Unidade 02 - Elemento Head</title>
         <meta charset="utf-8">
-        
+        <style> /* Nesta tag, serve para fornecer estilo (CSS). */
+            body{ /* Aplicando estilo a tag body. */
+                background: #16ec45; /* Cor de Plano de Fundo. */
+                /* OBS: Por padrão, a fonte textual é "Times New Roman". */
+                font-family: Arial, sans-serif; /* Aqui, está alterando a fonte textual. Neste caso, será
+                Arial; porém, se não for localizado, será mudado para sans-serif.
+                */
+                color: rgb(131, 11, 11); /* Cor para a Fonte Textual. */
+            }
+        </style>
+        <script> /* Tag para inserir código em script (por exemplo, javascript). */
+            function escreverNome(){ /** Criando uma Função em JavaScript. Não recebe nenhum argumento. */
+                nome.innerHTML = "Seja Bem-Vindo a Página."; // "nome" é o valor fornecido ao atributo "id". Ou seja,
+                // está 'atuando' como se fosse um "objeto para a tag que o forneceu esse valor", no caso, a tag p.
+                // innerHTML está fornecendo uma string, ao qual será exibida pela tag p abaixo. 
+            }
+            window.onload = escreverNome; // Quando o navegador for aberto e abrir está página, a função escreverNome, será
+            // executada. Se não fizer isso, a string não será exibida.
+        </script>
     </head>
     <body>
+        <h1>Bem-Vindo a Página Web 1</h1>
+        <p id="nome"> </p>
     </body>
 </html>
