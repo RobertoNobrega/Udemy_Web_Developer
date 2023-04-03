@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Aula 29: Trabalhando com Listas. -->
 <html lang="pt-br">
 
     <head>
@@ -8,13 +9,20 @@
 
     <body>
 		<!-- Lista sem ordem --->
-        <ul>
+        <ul> <!-- OBS: Por Padrão, o item de lista é marcado por uma bolinha preenchida. -->
         	<li>Brasil</li>
         	<li>Argentina</li>
             <li>Uruguai</li>
             <li>Venezuela</li>
         </ul>
-        
+        <ul type="square"> <!-- type="square" . Vai indicar que, cada item da lista, será apresentado com um quadradinho preenchido. -->
+            <li>São Paulo</li>
+            <li>Rio de Janeiro</li>
+        </ul>
+        <ul type="circle"> <!-- type="circle" . Vai indicar que, cada item da lista, será apresentado com um círculo aberto. -->
+            <li>Minas Gerais</li>
+            <li>Rio Grande do Sul</li>
+        </ul>
 		<!-- Lista em ordem --->
         <ol>
         	<li>Alonso</li>
@@ -22,7 +30,18 @@
             <li>Massa</li>
             <li>Button</li>
         </ol>        
-
+        <ol type="a"> <!-- Os itens da lista serão exibidos, por ordem alfabética, por letras minúsculas. -->
+            <li>Pêra</li>
+            <li>Maçã</li>
+        </ol>
+        <ol type="A"> <!-- Os itens da lista serão exibidos, por ordem alfabética, por letras maiúsculas. -->
+            <li>Banana</li>
+            <li>Uva</li>
+        </ol>
+        <ol type="I"> <!-- Os itens da lista serão exibidos, por ordem de Algarismos Romanos. -->
+            <li>Carro</li>
+            <li>Moto</li>
+        </ol>
 		<!-- Lista descriptiva --->
         <dl>
 			<dt>Unidade 01</dt>
