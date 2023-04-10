@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Aula 40: Criação de Listas. -->
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,10 +10,21 @@
                 font-family: sans-serif;
                 font-size: 12 px;
             }
+            li{ /* Aplicando estilo para a tag li .  */
+                /* list-style-type: circle; */ /* Aplicando um ícone cada cada elemento de li. */
+                list-style-image: url(imagem/estrela.png); /* Para cada item li, terá um ícone ( uma imagem ). */
+            }
 		</style>
     </head>
     
     <body>
-        
+        <ul> <!-- Lista Não Ordenada-->
+          <li>Brasil</li>
+          <li>Argentina</li>
+        </ul>
+        <ol> <!-- Lista Ordenada -->
+          <li>Uruguai</li>
+          <li>México</li>
+        </ol>
     </body>
 </html>
