@@ -1,13 +1,47 @@
 <!doctype html>
+<!-- Aula 56: Criando primeira tabela -->
 <html lang="pt_BR">
  
     <head>
         <meta charset="utf-8">
         <title>Cursos HTML5 Essencial</title>
+        <style>
+            table{ /* Estilo para a tabela. */
+                width: 300px; /* Largura para a tabela. */
+                /* border: 1px solid #333; */ /* Borda para a Tabela. */
+                border-width: 1px; /* Largura da Borda. */
+                border-style: solid; /* Estilo da Borda. */
+
+            }
+            td, th{ /* Estilo para coluna da tabela. Aplicando para as tags td e th */
+                /*
+                border-style: solid;
+                border-width: 1px;
+                padding: 10px;
+                */
+                background: #ddd;
+                padding: 8px;
+            }
+            th{ /* Estilo para a tag th. */
+                text-align: left; /* Alinhamento Textual (nesse caso, para a esquerda). */
+            }
+        </style>
     </head>
     
     <body>
-
+        <table> <!-- Tag, para definir tabela. -->
+            <!-- tag tr serve para definir uma linha da tabela. tag td define uma coluna na tabela. -->
+            <tr> <!-- Linha 1-->
+                <!-- <td>Brasil</td> --> <!-- Coluna 1 da Linha 1 -->
+                <th>Brasil</th>
+                <td>5</td> <!-- Coluna 2 da Linha 1 -->
+            </tr>
+            <tr> <!-- Linha 2-->
+                <!-- <td>Argentina</td> --> <!-- Coluna 1 da Linha 2 -->
+                <th>Argentina</th>
+                <td>2</td> <!-- Coluna 2 da Linha 2 -->
+            </tr>
+        </table>
 	</body>
     
 </html>
