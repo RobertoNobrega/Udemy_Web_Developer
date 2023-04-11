@@ -1,4 +1,8 @@
 <!doctype html>
+<!-- Aula 51: Elemento small
+     Aula 52: Elemento address: Tag para informação de contato. OBS: Não pode ser filha de uma tag de cabeçalho.
+     Aula 53: Elemento address para número de telefone
+ -->
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -90,8 +94,8 @@
                     What I am doing is using seasonal Italian ingredients and combining them to create dishes with a modern flair that will invigorate our customers' palates, Steven says. 
                     </p>
                 </aside>
-                
-                <p>Those who have enjoyed Cafe Townsend and its world-class cuisine shouldn't worry - the stellar tableside service, scrumptious regional specials and menu favorites remain. But Steven's latest menu additions are something you don't want to miss.</p>
+                <!-- A tag mark serve para fornecer um efeito de "marca texto". -->
+                <p>Those who have enjoyed <mark>Cafe Townsend</mark> and its world-class cuisine shouldn't worry - the stellar tableside service, scrumptious regional specials and menu favorites remain. But Steven's latest menu additions are something you don't want to miss.</p>
                 <p>&quot;The utilization of regional seafood with the accompaniment of our fresh-grown herbs is something I'm avid about.&quot;</p>
 
                 <h4>Appetizer</h4>
@@ -112,6 +116,10 @@
                     <li>Pollo alla Zenzero - Semi-boneless half of chicken sauteed with garlic, rosemary, mustard and sage in a fresh ginger-spiked sauce</li>
                     <li>Vitello Dolce Bacio - Veal medallions sauteed with mixed mushrooms in a marsala wine sauce with a touch of cream and chopped tomato, crowned with a jumbo shrimp</li>
                 </ul>
+                <address>
+                    Francesco and Jane can be contacted: <a href="contact@cafefonteneblue.com">contact@cafefonteneblue.com</a>
+                    <address>Or call for <a href="tel:08000474493"> 08000474493 </a> </address> <!-- OBS: A tag address também serve para inserir número de telefone. -->
+                </address>
             </article>
 
             <div id="apoio">
@@ -131,7 +139,12 @@
                 </section>
             </div>
 
-            <footer>Cafe Fontenebleu - Rua Ernesto de Paula Santos, 187 Sala 506 - Recife-PE</footer>
+            <footer>
+                <p>Cafe Fontenebleu - Rua Ernesto de Paula Santos, 187 Sala 506 - Recife-PE</p>
+                <small> <!-- A tag small, serve para "pequenos textos observacionais".-->
+                    <p>&copy Copyright 2023 - IMedia Brasil. Todos os Direitos Reservados.</p>
+                </small>
+            </footer>
     
         </main>
     </body>
