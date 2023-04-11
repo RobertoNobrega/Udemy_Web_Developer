@@ -1,5 +1,5 @@
 <!doctype html>
-
+<!-- Aula 42: Criação de Menu Vertical com Listas. -->
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
@@ -11,20 +11,33 @@
 				font-size:13px;
 			}
 			
-			ul {
-				
+			ul { /** Estilo para a tag ul. Para este caso, margin e padding estão com valor zero,
+                     pois está colocando os itens da lista para o lado esquerdo da página,
+                     quase próximo a margem esquerda da página.
+                 */
+				margin: 0;
+                padding: 0;
+                width: 200px; /* Largura de ul (da lista). */
 			}
 			
-			li {
-			
+			li { /** Aplicando estilo para a tag li. */
+                list-style: none; /* Aqui, vai retirar os ícones de cada item de li. */
 			}
 			
-			li a {
-				
+			li a { /* Estilo para a tag li, que possui a tag a . */
+				display: block; /* Para este caso, o cursor do mouse continuará sendo exibido,
+                                   mesmo se o cursor não estiver tão próximo do item de li.
+                                */
+                text-decoration: none; /* Para este caso, irá retirar o sublinha de cada item de li. */
+                background: #09c; /* Cor para o plano de fundo, de cada li. */
+                margin-bottom: 1px; /* Distância Externa, entre um elemento de li para outro. */
+                padding: 5px 3px; /* Distância Interna. 5px será na parte horizontal e 3px na parte vertical. */
+                color: white; /* Cor para o texto. */
 			}
 			
-			li a:hover {
-			
+			li a:hover { /* "Disparo de Evento", ao passar o mouse nos itens da lista. */
+               /* OBS: O Evento a ser disparado é uma mudança de cor, para cada item da lista. */
+               background-color: #6CF; 
 			}
         </style>
         
