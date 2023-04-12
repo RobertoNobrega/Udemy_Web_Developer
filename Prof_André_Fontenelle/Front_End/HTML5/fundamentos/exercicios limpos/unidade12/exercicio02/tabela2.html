@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Aula 57: Tabela Semântica -->
 <html>
     <head>
             <meta charset="utf-8">
@@ -55,16 +56,82 @@
 			font-size:.9em;
 			color:#666;
 		}
-	
-	
+		
+		/*     		 Estilo para colorir as linhas da tabela.
+		tbody tr{
+			background-color: aqua;
+		}
+		*/
+
+		tbody tr:nth-child(odd){ /* Ao usar nth-child(odd), as linhas ímpares do body serão preenchidas. 
+			                        No caso, para linhas pares, troque o odd e substitua por even.
+								 */
+			background-color: aqua;
+		}
+
+		tbody tr:nth-child(even){ /* Para o preenchimento de linhas pares. */
+			background-color: rgb(198, 243, 73);
+		}
+
 	</style>
 
     <body>
 		
         <table>
-        
+			<!-- Os três elementos para tornar a tabela semântica: thead, tfoot e tbody. -->
+			<caption>Olimpíadas do Rio de Janeiro 2016</caption> <!-- "Título para esta tabela"-->
+			<thead>
+				<tr>
+					<td></td>
+					<td>Ouro</td>
+					<td>Prata</td>
+					<td>Bronze</td>
+					<td>Total</td>
+				</tr>
+			</thead>
+			<tfoot> <!-- OBS: Os elementos aparecerão fora do tbody. Ou seja, como se fossem parte do body, na última linha. -->
+				<tr>
+					<td></td>
+					<td>Ouro</td>
+					<td>Prata</td>
+					<td>Bronze</td>
+					<td>Total</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Brasil</td>
+					<td>100</td>
+					<td>130</td>
+					<td>200</td>
+					<td>430</td>
+				</tr>
+				
+				<tr>
+					<td>USA</td>
+					<td>90</td>
+					<td>110</td>
+					<td>210</td>
+					<td>420</td>
+				</tr>
+				
+				
+				<tr>
+					<td>China</td>
+					<td>89</td>
+					<td>100</td>
+					<td>100</td>
+					<td>289</td>
+				</tr>
 
-        
+				<tr>
+					<td>Inglaterra</td>
+					<td>89</td>
+					<td>100</td>
+					<td>100</td>
+					<td>289</td>
+				</tr>
+			</tbody>
         </table>
 
     </body>

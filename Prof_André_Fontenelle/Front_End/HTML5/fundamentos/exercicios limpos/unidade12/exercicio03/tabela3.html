@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Aula 58: Usando colgroup e col. -->
 <html>
     <head>
             <meta charset="utf-8">
@@ -56,15 +57,24 @@
 			color:#666;
 		}
         
-        tbody tr:nth-child(odd) {
-            background-color: beige   
+        tbody tr:nth-child(odd) { /* Estilo para as linhas ímpares da tabela. */
+            background-color: #ddd;
         }
         
-        tbody tr:nth-child(even) {
+        /*
+        tbody tr:nth-child(even) {     // Estilo para as linhas pares da tabela.
             background-color:antiquewhite  
         }        
-	
-	
+        */
+        .coluna1{ /* Classe chamada  coluna1. Estilo para a primeira coluna da tabela.  */
+            background-color: #F0F0F0;
+        }
+        .coluna2{ /* Classe chamada  coluna2. Estilo para a segunda coluna da tabela.  */
+            background-color: #9e9090b9;
+        }
+        .coluna4{ /* Classe chamada  coluna4. Estilo para a quarta coluna da tabela.  */
+            background-color:#ceb6b6;
+        }
 	</style>
 
     <body>
@@ -72,6 +82,17 @@
         <table>
         
             <caption>Olimpiadas do Rio de Janeiro 2016</caption>
+
+            <colgroup> <!-- Esta tag permite o agrupamento de colunas. -->
+                <!-- A tag col serve para definir uma tabela com colunas, para que 
+                     seja usada em definições semânticas em suas colunas.
+                -->
+                <col class="coluna1">
+                <col class="coluna2">
+                <col> <!-- Terceira Coluna. -->
+                <col class="coluna4">
+            </colgroup>
+
             <thead>
                 <tr>
                     <td></td>
