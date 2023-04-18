@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Aula 66: Adicionar um datalist ao um input text. -->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -8,6 +9,15 @@
     <body>
         <form action="index.html" method="post">
             
+            <input type="text" name="nome_loja" id="nome_loja" list="lojas" placeholder="Digite o nome da loja" size="40"> <!-- Este
+             input está associado ao datalist abaixo (por conta que o valor do atributo list é o mesmo do atributo id de datalist, 
+             que é lojas).  -->
+            <datalist id="lojas"> <!-- Adicionando uma lista de itens, que estará "associado ao um input". -->
+                <option value="Centauro">Centauro</option>
+                <option value="Centro Automotivo">Centro Automotivo</option>
+                <option value="Magazine Luiza">Magazine Luiza</option>
+                <option value="Mc Donalds">Mc Donalds</option>
+            </datalist>
         </form>
     </body>
 </html>

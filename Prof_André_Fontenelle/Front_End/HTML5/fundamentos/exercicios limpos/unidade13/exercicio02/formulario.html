@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Aula 60: Criação de um formulário simples -->
 <html lang="pt-BR">
     <head>
         <meta charset="utf-8">
@@ -10,7 +11,30 @@
     <body>
         
         <h2>Formulário</h2>
-        
+        <form action="destino.html" method=""> <!-- Para criar formulário, usa-se a tag form. No atributo action, indica
+         para qual página serão enviados os dados obtidos pelo usuário, por meio do formulário. O atributo method possui
+         dois valores possíveis: get e post. O valor get vai indicar que as variáveis serão enviadas na URL do navegador
+         (uma aplicação disso seria para realizar uma pesquisa, busca). O valor post é mais usada para o caso de login ou
+         de inserção (os dados ficarão "escondidos", para que ocorra o envio. Não há limitação de envio de caracteres, en-
+         quanto que no get ocorre).
+         -->
+            <label for="nome">Nome Completo</label> <!-- Label. O for indica para qual campo o label está indicando. OBS: O valor
+             do for tem que ser o mesmo valor do id da tag input. -->
+            <input type="text" name="nome" id="nome" size="30" maxlength="100"> <!-- Entrada de Dados. Como o type é text, então a entrada deverá
+             ser um texto. OBS: Os valores de name e id podem ser iguais. O id não é obrigatório, porém, caso for usar algu-
+             ma operação (em JavaScript), é necessário ter. O name
+             size indica a quantidade de caracteres que o campo pode receber. maxlength indica a quantidade máxima de caracteres que
+             pode ser recebida.
+            -->
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" id="telefone" size="30" maxlength="30">
+
+            <label for="email">E-Mail</label>
+            <input type="text" name="email" id="email" size="30" maxlength="60">
+
+            <input type="submit" value="Enviar Dados" name="enviar_dados" id="enviar_dados"> <!-- Aqui, quando o valor de type é
+             submit, indica que será um botão. Em value, será o nome que aparecerá no botão para o usuário. -->
+        </form>
     
     </body>
 </html>

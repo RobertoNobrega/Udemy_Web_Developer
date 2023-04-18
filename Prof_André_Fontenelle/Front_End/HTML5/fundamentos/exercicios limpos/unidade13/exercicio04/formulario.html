@@ -1,4 +1,7 @@
 <!doctype html>
+<!-- Aula 62: Adicionar campos requeridos
+     Aula 63: Adicionar placeholder e autofocus
+-->
 <html lang="pt-BR">
     <head>
         <meta charset="utf-8">
@@ -12,13 +15,18 @@
         <h2>Formulário</h2>
         <form action="destino.html" method="post">
             <label for="nome">Nome completo</label>
-            <input type="text" name="nome" id="nome" size="30" maxlength="100">
+            <input type="text" name="nome" id="nome" size="30" maxlength="100" required autofocus placeholder="Insira seu nome"> <!-- required: Indica que
+             o campo tem que ser preenchido obrigatoriamente, caso contrário, uma mensagem de alerta é exibida. A
+             mensagem aparecerá em um idioma que esteja configurado ao navegador.
+             placeholder: Uma "mensagem de pedido", que fica ao campo, como forma de 'orientar' o usuário.
+             autofocus: Faz com que o cursor ( | ) apareça imediatamente no campo.
+            -->
             
             <label for="telefone">Telefone</label>
             <input type="tel" name="telefone" id="telefone" size="30" maxlength="30"> 
             
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" size="30" maxlength="60">             
+            <input type="email" name="email" id="email" size="30" maxlength="60" required> <!-- Mesmo efeito no campo Nome. -->        
             
             <label for="website">Web Site</label>
             <input type="url" name="website" id="website" size="30" maxlength="60">             

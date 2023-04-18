@@ -1,13 +1,28 @@
 <!doctype html>
+<!-- Aula 67: Adicionando um type range. -->
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Curso HTML5 Essencial</title>
+        <script> /* Para adicionar código em JavaScript. */
+            function mostrarResultado(){
+                document.getElementById("resultado").innerHTML = document.getElementById("filhos").value; /* Está atribuindo o
+                valor capturado de value e atribuindo ao elemento de id chamado resultado. */
+            }
+        </script>
     </head>
 
     <body>
         <form action="index.html" method="post">
-            
+            <input type="range" id="filhos" min="1" max="10" value="1" onchange="mostrarResultado()">
+            <!-- Para que apareça valor selecionado (por conta da faixa de valores estabelecido), será
+                 necessário adicionar script escrito em linguagem JavaScript. onchange é um evento, em que
+                 quando for ocorrido, irá chamar uma função (neste caso, será a função mostrarResultado, para
+                 que exiba o valor selecionado na faixa de valores).
+            -->
+            <span id="resultado"> </span> <!-- Esta tag aqui, será para realizar este efeito de "valor selecionado
+             da faixa", com ajuda de script em JavaScript.
+            -->
         </form>
     </body>
 </html>
