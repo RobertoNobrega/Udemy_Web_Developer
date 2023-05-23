@@ -1,0 +1,27 @@
+<html>
+    <!-- 
+                        Aula 81, seção 17. CSS Inline
+            Ou seja, estilo para tag, porém o código é inserido na própria tag, usando a palavra style.
+            OBS: Use o "CSS inline" com cautela.
+    -->
+    <head>
+        <title>Curso de CSS3 - Essencial</title>
+        <meta charset="utf-8">
+        <style>
+            p{
+                font-family:sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cafe Townsend welcomes you</h1>
+        <p style="color:green">Cafe Townsend's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the 
+            best chef in the world today, Chef Bienni blends earthy seasonal flavors and bold ingredients to create exquisite contemporary
+            cuisine. </p> <!-- Nesta tag p, recebeu estilo "CSS inline", ou seja, apenas esta tag p receberá o estilo. -->
+        <p>The name <span style="background:yellow">Cafe Townsend</span> comes from our first restaurant, located in a historic building
+           on Townsend Street in San Francisco, where we opened the doors in 1985. We've replicated the elegant interior, exceptional service,
+           and world-class cuisine in our restaurants around the country.</p> <!-- Nesta tag (tag span), também está usando "CSS inline". -->
+        <p style="color:red;font-weight:bold;">Hello World!!!</p> <!-- É possível inserir mais de uma propriedade no style. Basta colocar um
+           ponto e vírgula, seguido da nova propriedade que deseja inserir. -->  
+    </body>
+</html>
